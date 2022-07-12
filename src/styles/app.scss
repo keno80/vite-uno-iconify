@@ -1,23 +1,22 @@
-$d-bg: #121212;
-$w-text-color: #213547;
-$d-text-color: rgba(255, 255, 255, .87);
+@import './variable.scss';
 
 html,
 body,
 #app {
-  height: 100%;
+  height: calc(100vh - 92px);
   margin: 0;
   padding: 0;
 }
 
 html {
+  background: $w-bg;
   color: $w-text-color;
   transition: color .25s, background .25s;
-}
+  --border-color: #97979733;
 
-html {
   &.dark {
     background: $d-bg;
     color: $d-text-color;
+    --border-color: #5454547a;
   }
 }
