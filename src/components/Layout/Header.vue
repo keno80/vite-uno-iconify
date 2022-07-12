@@ -31,12 +31,19 @@ import { toggleDark } from '@/composables/dark'
           </a>
         </div>
         <div flex justify-end items-center flex-grow>
-          <div>
+          <div flex items-center justify-center class="-mr-8px content">
             <div
+              px-6px
               dark:i-carbon-moon
               i-carbon-sun
               cursor-pointer
               @click="toggleDark()"
+            />
+            <div
+              px-6px
+              i-carbon-logo-github
+              cursor-pointer
+              title="GitHub"
             />
           </div>
         </div>
@@ -44,3 +51,17 @@ import { toggleDark } from '@/composables/dark'
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+// 导航元素大于2时启用
+// .content {
+//   &::before {
+//     margin-right: 8px;
+//     margin-left: 8px;
+//     width: 1px;
+//     height: 24px;
+//     background-color: #5454547a;
+//     content: '';
+//   }
+// }
+</style>
