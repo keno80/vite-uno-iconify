@@ -21,6 +21,7 @@ export default defineConfig({
           warn: true,
         }),
       ],
+      rules: [['bg-black-36', { 'background-color': '#121212' }]],
     }),
   ],
   resolve: {
