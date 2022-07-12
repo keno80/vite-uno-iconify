@@ -1,0 +1,23 @@
+$d-bg: #121212;
+$w-text-color: #213547;
+$d-text-color: rgba(255, 255, 255, .87);
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: $w-text-color;
+  transition: color .5s, background .5s;
+}
+
+html {
+  &.dark {
+    background: $d-bg;
+    color: $d-text-color;
+  }
+}
