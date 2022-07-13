@@ -3,7 +3,7 @@ import { toggleDark } from '@/composables/dark'
 </script>
 
 <template>
-  <div h-72px bg-white bg-opacity-75 dark:bg-black-36 backdrop-blur backdrop-saturate-5 fixed top-0 left-0 w-full
+  <div h-72px bg-white bg-opacity-75 dark:bg-black-36 backdrop-blur backdrop-saturate-5 fixed top-0 left-0 w-full z-10
     class="nav">
     <div px-32px h-full relative class="navbar">
       <div flex h-full justify-between my-0 mx-auto class="max-w-[calc(1440px-64px)] nav_container">
