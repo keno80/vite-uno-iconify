@@ -4,9 +4,11 @@ import Header from './Header.vue'
 
 <template>
   <div class="blog">
-    <Header />
-    <div mt-92px max-w-960px mx-auto my-0>
-      <router-view />
-    </div>
+    <el-scrollbar height="100vh">
+      <Header />
+      <div mt-92px max-w-960px mx-auto my-0>
+        <router-view />
+      </div>
+    </el-scrollbar>
   </div>
 </template>
